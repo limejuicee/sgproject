@@ -5,3 +5,5 @@ sgproject 분리 필요
 Eclipse IDE for Enterprise Java and Web Developers - 2023-12
 Tomcat
 mySQL
+
+git bash 다루는법?
