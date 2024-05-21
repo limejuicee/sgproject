@@ -25,11 +25,10 @@
         </style>
         
     </head>
-        <link rel="stylesheet" href="btn_style.css">
+        <link rel="stylesheet" href="sg_style.css">
         <div>
             <div class="upper">
                 <button>입장확인</button><br>
-                <img src="bono.jpg" alt="귀여운 우리의 친구">
                 <button>출입확인</button><br>
             </div>
             <div class="lower">
@@ -42,8 +41,8 @@
             
             let btn=document.querySelectorAll("button");
             btn[0].onclick=function() {
-                window.open('sg2.html','기록')
-                <a herf='sg2.html'>
+                window.open('sg2.jsp','기록')
+                //<a herf='sg2.jsp'>
             }
 
             btn[1].onclick=function() {
