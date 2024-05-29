@@ -55,7 +55,7 @@
 			Class.forName("com.mysql.jdbc.Driver");
 			conn=DriverManager.getConnection(url, db_id, db_pw);
 			stmt=conn.createStatement();
-			String sql="select * from register;";
+			String sql="select * from 명단;";
 			rs=stmt.executeQuery(sql);
 		}catch(Exception e){
 			System.out.println("접속 중 오류발생 : "+e);
