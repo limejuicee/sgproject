@@ -34,40 +34,13 @@
                 <a href="sg2.jsp">a</a>
             </div>
             <div class="lower">
-                <button>?</button><br>
+                <button>회원가입</button><br>
+                <a href="insert.jsp">?</a>
                 <button>?</button>
+                <a href="member.jsp">?</a>
             </div>
         </div>
-    <body>
-    	<%
-    	Connection conn=null;	//회선연결
-		Statement stmt=null;	//쿼리문 전달용 객체
-		ResultSet rs=null;		//select문의 결과를 담을 객체
-		String url="jdbc:mysql://127.0.0.1:3306/sample";
-		String db_id="root";
-		String db_pw="iotiot";
-		
-		String nm;
-		String user;
-		String add;
-    	try{
-			//접속 시도 위치
-			Class.forName("com.mysql.jdbc.Driver");
-			conn=DriverManager.getConnection(url, db_id, db_pw);
-			stmt=conn.createStatement();
-			String sql="select * from 명단;";
-			rs=stmt.executeQuery(sql);
-		}catch(Exception e){
-			System.out.println("접속 중 오류발생 : "+e);
-		}finally{
-			try{
-				//접속 해제 위치
-				if(conn!=null)conn.close();
-			}catch(Exception ex){
-				System.out.println("접속 해제 중 오류발생 : "+ex);
-			}
-		}
-		%>
+    <body>    	
         <script>
             
             let btn=document.querySelectorAll("button");
